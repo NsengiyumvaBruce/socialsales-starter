@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A free, practical 7-lesson course on selling with social media. Written lessons, audio playback and practice tools, by Nsengiyumva Bruce of Bruce Digital 360, Kigali.">
+<meta name="author" content="Nsengiyumva Bruce">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Social Sales Starter">
+<meta property="og:description" content="A free, practical 7-lesson course on selling with social media. Read it or listen to it.">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0F1F1A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2714%27 fill=%27%231B4FB8%27/%3E%3Ctext x=%2732%27 y=%2745%27 font-size=%2738%27 font-family=%27Arial,sans-serif%27 font-weight=%27700%27 text-anchor=%27middle%27 fill=%27white%27%3EB%3C/text%3E%3C/svg%3E">
+<style>:root{color-scheme:light}[hidden]{display:none!important}img{max-width:100%}</style>
+<title>Social Sales Starter</title>
+
+<style>
+/* Layout: a course shell. Lesson list on the left (a scrolling strip on phones), one lesson at a time on the right, listen bar above it. */
+:root{
+  --bg:#F4F7F3;
+  --surface:#FFFFFF;
+  --ink:#0F1F1A;
+  --muted:#46574F;
+  --line:#D3DCD6;
+  --accent:#1B4FB8;
+  --accent-ink:#FFFFFF;
+  --sun:#FFE9A3;
+  --sun-ink:#0F1F1A;
+  --leaf:#1E6F46;
+  --leaf-soft:#DDF1E5;
+  --warn:#9A3412;
+  --warn-soft:#FDE8DC;
+  --f-display:'Segoe UI',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  --f-body:system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1512;--surface:#141F1B;--ink:#EAF1ED;--muted:#A6B6AE;--line:#27372F;
+    --accent:#8FB3FF;--accent-ink:#0C1512;--sun:#3B3312;--sun-ink:#F6EBC0;
+    --leaf:#6EDBA2;--leaf-soft:#12301F;--warn:#FFB38A;--warn-soft:#3A1D0F;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1512;--surface:#141F1B;--ink:#EAF1ED;--muted:#A6B6AE;--line:#27372F;
+  --accent:#8FB3FF;--accent-ink:#0C1512;--sun:#3B3312;--sun-ink:#F6EBC0;
+  --leaf:#6EDBA2;--leaf-soft:#12301F;--warn:#FFB38A;--warn-soft:#3A1D0F;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:var(--f-body);font-size:16px;line-height:1.6;
+  margin:0;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:24px 48px;
+}
+.wrap{max-width:1080px;margin:0 auto}
+h1,h2,h3{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,3.25rem);font-weight:800;letter-spacing:-0.02em}
+h2{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:800;letter-spacing:-0.01em}
+h3{font-size:1.2rem;font-weight:600;margin-top:28px;margin-bottom:8px}
+p{margin:0 0 14px}
+ul,ol{margin:0 0 14px;padding-left:1.3em}
+li{margin-bottom:6px}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+h2:focus{outline:none}
+
+/* header */
+.top{display:grid;gap:14px;padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+.kicker{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.lead{font-size:1.1rem;max-width:62ch;color:var(--ink)}
+.byline{font-size:.9rem;color:var(--muted);max-width:70ch;margin:0}
+.progress{display:flex;align-items:center;gap:12px;max-width:420px}
+.bar{flex:1;height:8px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--leaf);transition:width .3s}
+.progress span{font-size:.85rem;color:var(--muted);white-space:nowrap}
+
+/* shell */
+.shell{display:grid;grid-template-columns:260px minmax(0,1fr);gap:32px;align-items:start}
+.toc{position:sticky;top:calc(16px + env(safe-area-inset-top,0px))}
+.toc ol{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.toc li{margin:0}
+.toc a{display:flex;gap:10px;align-items:baseline;padding:10px 12px;border-radius:10px;text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem;line-height:1.3;min-height:44px}
+.toc a:hover{background:var(--surface)}
+.toc a .n{font-family:var(--f-display);font-weight:800;color:var(--muted);min-width:1.2em}
+.toc a.on{background:var(--ink);color:var(--bg)}
+.toc a.on .n{color:var(--bg)}
+.toc a.finished .n::after{content:"";}
+.toc a.finished{box-shadow:inset 0 -3px 0 var(--leaf)}
+.toc small{display:block;font-weight:400;color:var(--muted);font-size:.78rem}
+.toc a.on small{color:var(--bg);opacity:.8}
+
+/* listen bar */
+.listen{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-bottom:20px}
+.listen label{font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:6px}
+.listen select{font:inherit;font-size:.85rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px;max-width:200px;min-height:40px}
+.btn{font:inherit;font-weight:600;border-radius:10px;padding:10px 16px;min-height:44px;cursor:pointer;border:1px solid var(--ink);background:var(--surface);color:var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{filter:brightness(.96)}
+.btn[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+/* lesson */
+article{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(18px,4vw,36px)}
+.meta{display:flex;gap:10px;flex-wrap:wrap;color:var(--muted);font-size:.85rem;margin:8px 0 22px}
+.reading{background:var(--sun);color:var(--sun-ink);border-radius:6px;box-shadow:0 0 0 4px var(--sun)}
+.do{background:var(--sun);color:var(--sun-ink);border-radius:14px;padding:16px 18px;margin:24px 0}
+.do .tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid currentColor;border-radius:99px;padding:2px 10px;margin-bottom:8px}
+.do p:last-child,.do ul:last-child{margin-bottom:0}
+.note{font-size:.88rem;color:var(--muted)}
+.example{background:var(--bg);border:1px dashed var(--line);border-radius:12px;padding:12px 14px;margin:0 0 14px}
+.tool{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px;margin:20px 0}
+.tool h4{font-family:var(--f-display);font-size:1.05rem;margin:0 0 4px}
+.tool .hint{font-size:.82rem;color:var(--muted);margin-bottom:12px}
+.fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-bottom:12px}
+.fields label{display:grid;gap:4px;font-size:.82rem;font-weight:600;min-width:0}
+.fields input{font:inherit;font-weight:400;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px;min-height:44px;width:100%}
+.out{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-weight:600}
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.results div{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.results b{display:block;font-family:var(--f-display);font-size:1.6rem;font-variant-numeric:tabular-nums}
+.results span{font-size:.8rem;color:var(--muted)}
+.check{display:flex;gap:10px;align-items:flex-start;margin-bottom:8px}
+.check input{width:22px;height:22px;margin-top:2px;flex:none;accent-color:var(--accent)}
+.check label{cursor:pointer}
+.week{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.week h3{margin:0 0 8px;font-size:1.05rem}
+
+/* quiz */
+.quiz{border:1px solid var(--line);border-radius:14px;padding:16px;margin:24px 0}
+.quiz .q{font-weight:600;margin-bottom:10px}
+.quiz .tagq{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:4px}
+.opts{display:grid;gap:8px}
+.opt{font:inherit;text-align:left;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:10px 14px;min-height:44px;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt.ok{background:var(--leaf-soft);border-color:var(--leaf);color:var(--ink)}
+.opt.no{background:var(--warn-soft);border-color:var(--warn);color:var(--ink);text-decoration:line-through}
+.opt:disabled{cursor:default}
+.fb{margin:10px 0 0;font-size:.92rem}
+
+.lessonnav{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;margin-top:28px;padding-top:20px;border-top:1px solid var(--line)}
+.lessonnav a.btn{text-decoration:none;display:inline-flex;align-items:center}
+.done-btn[aria-pressed="true"]{background:var(--leaf);border-color:var(--leaf);color:var(--bg)}
+
+/* feedback + sources */
+.feedback{margin-top:28px;background:var(--ink);color:var(--bg);border-radius:18px;padding:clamp(18px,4vw,32px)}
+.feedback h2{font-size:1.5rem}
+.feedback p{max-width:60ch;margin-top:8px}
+.feedback .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.feedback .btn{background:var(--bg);color:var(--ink);border-color:var(--bg)}
+.feedback a.btn{text-decoration:none;display:inline-flex;align-items:center}
+.feedback .msg{font-size:.9rem;margin-top:10px;margin-bottom:0}
+.sources{margin-top:28px;font-size:.88rem;color:var(--muted)}
+.sources h2{font-size:1rem;color:var(--ink);margin-bottom:8px}
+
+
+/* learner tools and additional learning features */
+.learner-panel,.completion-card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;margin:0 0 24px}
+.learner-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+.learner-heading h2{font-size:1.45rem;margin:4px 0 6px}
+.utility-actions,.notes-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.learner-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:18px}
+.learner-stats div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px}
+.learner-stats strong{display:block;font-family:var(--f-display);font-size:1.5rem}
+.learner-stats span{font-size:.8rem;color:var(--muted)}
+.notes-box{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:16px;margin:24px 0}
+.notes-box label{display:block;font-weight:700;margin-bottom:8px}
+.notes-box textarea{width:100%;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px;resize:vertical;min-height:100px}
+.completion-card h2{font-size:1.45rem;margin-bottom:8px}
+.completion-card .btn:disabled{opacity:.55;cursor:not-allowed}
+body[data-printing="true"] .no-say{display:none!important}
+@media(max-width:560px){.learner-stats{grid-template-columns:1fr 1fr}.learner-stats div:last-child{grid-column:1/-1}}
+@media print{
+  body{background:#fff!important;color:#111!important;padding:0}
+  .wrap{max-width:none}
+  .top,.toc,.learner-panel,.listen,.feedback,.sources,.completion-card,.lessonnav,.no-say{display:none!important}
+  .shell{display:block}
+  article{display:block!important;border:0;padding:0;break-after:page}
+  article[hidden]{display:none!important}
+}
+
+@media (max-width:860px){
+  .shell{grid-template-columns:minmax(0,1fr);gap:20px}
+  .toc{position:static;overflow-x:auto;padding-bottom:6px}
+  .toc ol{display:flex;gap:8px;width:max-content}
+  .toc a{background:var(--surface);border:1px solid var(--line);white-space:nowrap}
+  .toc small{display:none}
+}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+</head>
+<body>
+<noscript><p class="example">JavaScript is turned off. Lesson text remains readable, but progress tracking, quizzes, notes and audio require JavaScript.</p></noscript>
+<div class="wrap">
+<header class="top">
+  <span class="kicker">FREE SELF-PACED COURSE · 7 PRACTICAL LESSONS</span>
+  <h1>Social Sales Starter</h1>
+  <p class="lead">Go from no plan to a working system for finding customers on social media. Read each lesson or listen to it. About 10 minutes a day.</p>
+  <p class="byline">By Nsengiyumva Bruce, student at BYU-Pathway Worldwide. Bruce Digital 360, Kigali, Rwanda. Google certificates in Ad Manager, Shopping Ads and Ads Display.</p>
+  <div class="progress" aria-live="polite"><div class="bar" aria-hidden="true"><i id="bar"></i></div><span id="ptext">0 of 8 done</span></div>
+</header>
+
+
+<section class="learner-panel no-say" aria-label="Learner tools">
+  <div class="learner-heading">
+    <div>
+      <span class="kicker">Your learning space</span>
+      <h2>Keep your progress moving</h2>
+      <p class="note">Your progress and notes stay in this browser on this device. They are not uploaded to a server.</p>
+    </div>
+    <div class="utility-actions">
+      <button type="button" class="btn" id="themeBtn" aria-pressed="false">Use dark mode</button>
+      <button type="button" class="btn" id="printBtn">Print lesson</button>
+    </div>
+  </div>
+  <div class="learner-stats" aria-live="polite">
+    <div><strong id="completedStat">0/8</strong><span>Sections completed</span></div>
+    <div><strong id="remainingStat">8</strong><span>Sections remaining</span></div>
+    <div><strong id="percentStat">0%</strong><span>Overall progress</span></div>
+  </div>
+  <div class="utility-actions">
+    <button type="button" class="btn" id="exportBtn">Export my progress</button>
+    <button type="button" class="btn" id="resetBtn">Reset progress</button>
+    <span class="note" id="utilityStatus" role="status" aria-live="polite"></span>
+  </div>
+</section>
+
+<div class="shell">
+<nav class="toc" aria-label="Lessons">
+  <ol>
+    <li><a href="#start"><span class="n">0</span><span>Start here<small>3 min</small></span></a></li>
+    <li><a href="#lesson-1"><span class="n">1</span><span>Know your customer and offer<small>10 min</small></span></a></li>
+    <li><a href="#lesson-2"><span class="n">2</span><span>Set up profiles that sell<small>10 min</small></span></a></li>
+    <li><a href="#lesson-3"><span class="n">3</span><span>Decide what to post<small>12 min</small></span></a></li>
+    <li><a href="#lesson-4"><span class="n">4</span><span>Turn attention into sales<small>12 min</small></span></a></li>
+    <li><a href="#lesson-5"><span class="n">5</span><span>Your first paid ad<small>12 min</small></span></a></li>
+    <li><a href="#lesson-6"><span class="n">6</span><span>Measure and improve<small>10 min</small></span></a></li>
+    <li><a href="#lesson-7"><span class="n">7</span><span>Your 30-day plan<small>8 min</small></span></a></li>
+  </ol>
+</nav>
+
+<main>
+<div class="listen no-say" id="listen" hidden>
+  <button type="button" class="btn primary" id="listenBtn" aria-pressed="false">Listen to this lesson</button>
+  <label for="rate">Speed
+    <select id="rate"><option value="0.85">Slow</option><option value="1" selected>Normal</option><option value="1.15">Fast</option></select>
+  </label>
+  <label for="voice">Voice
+    <select id="voice"><option value="">Default</option></select>
+  </label>
+</div>
+
+<!-- LESSON 0 -->
+<article id="start" tabindex="-1">
+  <h2 tabindex="-1">Start here</h2>
+  <div class="meta"><span>3 min</span></div>
+  <p>This course is for anyone who sells something: a product, a service or your own skills. You do not need money for ads or a large audience. You need a phone, a real offer and about 10 minutes a day.</p>
+  <h3>What you will have after the 7 lessons</h3>
+  <ul>
+    <li>A one-sentence offer that customers understand.</li>
+    <li>Profiles that make it easy to order or message you.</li>
+    <li>12 post ideas and a weekly posting rhythm.</li>
+    <li>A routine that turns comments and messages into sales.</li>
+    <li>A plan for your first small paid ad.</li>
+    <li>A weekly check that shows what to repeat and what to stop.</li>
+  </ul>
+  <h3>How to use this course</h3>
+  <ul>
+    <li>Do one lesson a day. Every lesson ends with one task. Finish the task before you move on.</li>
+    <li>Press Listen to hear the lesson read aloud by your device's voice.</li>
+    <li>Mark each lesson complete to track your progress. Your progress is saved on this device and browser when storage is available.</li>
+    <li>The examples come from different countries and businesses. Adapt them to your market, customers and local platform features.</li>
+  </ul>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Write down what you sell and one goal for the next 30 days. A good goal has a number, for example: "Get 10 new customer messages every week."</p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-start">My notes for this lesson</label>
+    <textarea id="notes-start" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-start" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-start">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <button type="button" class="btn done-btn" data-lesson="start" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#lesson-1">Next: Know your customer</a>
+  </div>
+</article>
+
+<!-- LESSON 1 -->
+<article id="lesson-1" tabindex="-1" hidden>
+  <h2 tabindex="-1">Know your customer and your offer</h2>
+  <div class="meta"><span>Lesson 1 of 7</span><span>10 min</span></div>
+  <p>Most posts fail because they speak to everyone. When you try to reach everyone, nobody feels the post is meant for them. Start with one type of customer.</p>
+  <h3>Describe one customer</h3>
+  <ul>
+    <li>Who are they? Think of age, job and place.</li>
+    <li>What problem do they want solved?</li>
+    <li>Which app do they already open every day?</li>
+  </ul>
+  <h3>Write your offer in one sentence</h3>
+  <p>Use this pattern: I help [who] get [result] with [what you sell].</p>
+  <div class="example"><p><strong>Example:</strong> I help small cafés get more walk-in customers with eye-catching Instagram posts.</p><p style="margin:0"><strong>Example:</strong> I help office workers in Nairobi get tailored shirts delivered in one week.</p></div>
+  <div class="tool no-say">
+    <h4>Offer builder</h4>
+    <p class="hint">Example values are filled in. Replace them with your own.</p>
+    <div class="fields">
+      <label for="of-who">Who you help<input id="of-who" type="text" value="small cafés" autocomplete="off"></label>
+      <label for="of-res">The result they get<input id="of-res" type="text" value="more walk-in customers" autocomplete="off"></label>
+      <label for="of-what">What you sell<input id="of-what" type="text" value="eye-catching Instagram posts" autocomplete="off"></label>
+    </div>
+    <p class="out" id="offer-out" style="margin-bottom:10px"></p>
+    <button type="button" class="btn" data-copy="offer-out">Copy sentence</button>
+  </div>
+  <h3>Choose where to start</h3>
+  <p>Pick one or two platforms, not five. Go where your customer already spends time.</p>
+  <ul>
+    <li><strong>WhatsApp and Facebook:</strong> good for local customers who like to chat before they buy.</li>
+    <li><strong>Instagram:</strong> good for products that look good in photos, such as food, fashion, beauty and crafts.</li>
+    <li><strong>TikTok:</strong> short videos that can reach people who do not follow you yet.</li>
+    <li><strong>LinkedIn:</strong> good for services, business customers and professional skills.</li>
+  </ul>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Write your customer description and your offer sentence. Choose your first platform.</p>
+  </div>
+  <div class="quiz no-say" data-quiz data-explain="It names who you help, the result they get and what you sell. The other two could describe any business.">
+    <span class="tagq">Check yourself</span>
+    <p class="q">Which offer sentence is strongest?</p>
+    <div class="opts">
+      <button type="button" class="opt">We sell good quality products for everyone.</button>
+      <button type="button" class="opt" data-ok="1">I help busy parents in Kigali get fresh lunch boxes delivered before noon.</button>
+      <button type="button" class="opt">Best prices. Follow us for more!</button>
+    </div>
+    <p class="fb" hidden></p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-lesson-1">My notes for this lesson</label>
+    <textarea id="notes-lesson-1" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-lesson-1" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-lesson-1">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <a class="btn" href="#start">Back</a>
+    <button type="button" class="btn done-btn" data-lesson="lesson-1" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#lesson-2">Next: Set up profiles</a>
+  </div>
+</article>
+
+<!-- LESSON 2 -->
+<article id="lesson-2" tabindex="-1" hidden>
+  <h2 tabindex="-1">Set up profiles that sell</h2>
+  <div class="meta"><span>Lesson 2 of 7</span><span>10 min</span></div>
+  <p>When someone likes one of your posts, the next thing they do is open your profile. If it is unclear, they leave. A good profile answers three questions in five seconds: what do you sell, who is it for and how do I order?</p>
+  <h3>The five parts of a strong profile</h3>
+  <ul>
+    <li><strong>Name and photo:</strong> use the same name and the same logo or face photo on every platform so people recognise you.</li>
+    <li><strong>Bio:</strong> say what you sell, who it is for, where you work and how to order.</li>
+    <li><strong>One link:</strong> send people to the place where you want them to go, such as your WhatsApp chat link, your catalog or your website.</li>
+    <li><strong>Contact button:</strong> turn on the call, message or email button so ordering takes one tap.</li>
+    <li><strong>Pinned or featured post:</strong> show your best offer or best customer result at the top.</li>
+  </ul>
+  <div class="example"><p style="margin:0"><strong>Example bio:</strong> Fresh lunch boxes for busy workers in Kigali. Order before 10:00, delivered by 12:00. Tap the link to order on WhatsApp.</p></div>
+  <h3>Use a business account</h3>
+  <p>On Instagram, TikTok and Facebook, switch to a business or professional account. It is free and shows statistics about who sees your posts. You will use those numbers in lesson 6.</p>
+  <h3>Try WhatsApp Business</h3>
+  <p>WhatsApp Business is a free app for small businesses. It lets you add a business profile, a product catalog, quick replies for common questions and labels to organise customers. Features differ between countries, so check WhatsApp's help pages for the current steps.</p>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Tick each item when your profile has it.</p>
+    <div class="no-say">
+      <div class="check"><input type="checkbox" id="p1" data-key="p1"><label for="p1">Same name and photo on every platform</label></div>
+      <div class="check"><input type="checkbox" id="p2" data-key="p2"><label for="p2">Bio with what I sell, who for, where and how to order</label></div>
+      <div class="check"><input type="checkbox" id="p3" data-key="p3"><label for="p3">One link that leads to ordering</label></div>
+      <div class="check"><input type="checkbox" id="p4" data-key="p4"><label for="p4">Contact button turned on</label></div>
+      <div class="check"><input type="checkbox" id="p5" data-key="p5"><label for="p5">Business account switched on</label></div>
+    </div>
+  </div>
+  <div class="quiz no-say" data-quiz data-explain="It says what you sell, where, how fast and how to order. The other bios give a customer nothing to act on.">
+    <span class="tagq">Check yourself</span>
+    <p class="q">Which bio is best?</p>
+    <div class="opts">
+      <button type="button" class="opt">Welcome to my page.</button>
+      <button type="button" class="opt">Follow for follow.</button>
+      <button type="button" class="opt" data-ok="1">Tailor in Nairobi. Shirts made in 7 days. Tap to chat on WhatsApp.</button>
+    </div>
+    <p class="fb" hidden></p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-lesson-2">My notes for this lesson</label>
+    <textarea id="notes-lesson-2" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-lesson-2" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-lesson-2">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <a class="btn" href="#lesson-1">Back</a>
+    <button type="button" class="btn done-btn" data-lesson="lesson-2" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#lesson-3">Next: What to post</a>
+  </div>
+</article>
+
+<!-- LESSON 3 -->
+<article id="lesson-3" tabindex="-1" hidden>
+  <h2 tabindex="-1">Decide what to post</h2>
+  <div class="meta"><span>Lesson 3 of 7</span><span>12 min</span></div>
+  <p>Consistency beats perfection. In a 2026 study of more than 52 million posts, Buffer found that accounts that skipped a week grew followers below their own normal rate, and that posting one or two times a week was clearly better than staying silent. Two or three good posts a week is enough to start, if you can keep it up.</p>
+  <h3>Five kinds of posts</h3>
+  <ul>
+    <li><strong>Show:</strong> your product or service in real use.</li>
+    <li><strong>Teach:</strong> one useful tip your customer can use today.</li>
+    <li><strong>Prove:</strong> customer photos, reviews and results.</li>
+    <li><strong>Behind the scenes:</strong> how you make it and who is on your team.</li>
+    <li><strong>Offer:</strong> a clear invitation to buy or to message you.</li>
+  </ul>
+  <p>A common rule of thumb is about four helpful posts for every one direct offer. It is a guideline, not a law, so test what works for your audience.</p>
+  <h3>Pick the right format</h3>
+  <ul>
+    <li><strong>Carousels</strong> (several slides you swipe): in Buffer's data they had the highest engagement on LinkedIn, about 21.8%, and on Instagram, about 6.9%.</li>
+    <li><strong>Short videos:</strong> on Instagram, Reels reached more people than carousels, while carousels earned more engagement. Videos shot on a phone can work better than polished ones.</li>
+    <li><strong>Photos and text:</strong> still useful, especially on Facebook, where all formats performed close together.</li>
+  </ul>
+  <p class="note">Buffer's data comes from posts scheduled through Buffer, so use the numbers as a guide, not a rule for every country.</p>
+  <h3>A simple post formula</h3>
+  <ul>
+    <li><strong>Hook:</strong> the first line or the first seconds make people stop.</li>
+    <li><strong>Value:</strong> give the tip, the proof or the story.</li>
+    <li><strong>Call to action:</strong> tell people what to do next, for example "Message me to order."</li>
+  </ul>
+  <h3>A weekly rhythm to start with</h3>
+  <ul>
+    <li>Monday: Teach.</li>
+    <li>Wednesday: Show.</li>
+    <li>Friday: Prove, and an Offer every second week.</li>
+  </ul>
+  <h3>Starter ideas</h3>
+  <ul>
+    <li>The three mistakes customers make when buying what you sell.</li>
+    <li>How your product is made, in 30 seconds.</li>
+    <li>A before and after.</li>
+    <li>The question customers ask you most.</li>
+    <li>A customer story, with their permission.</li>
+    <li>Your price list and how to order.</li>
+    <li>Meet the person behind the business.</li>
+    <li>A myth and the fact about your product.</li>
+  </ul>
+  <p>Treat posting time as a test, not a rule. Try two different times for a month and keep the better one.</p>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Write 12 post ideas: three posts a week for four weeks. Then publish the first one today.</p>
+  </div>
+  <div class="quiz no-say" data-quiz data-explain="Buffer's data shows that posting regularly, even once or twice a week, beats going silent. Waiting for perfect usually means not posting.">
+    <span class="tagq">Check yourself</span>
+    <p class="q">A friend stops posting for two weeks to make one perfect video. What is the better approach?</p>
+    <div class="opts">
+      <button type="button" class="opt">Wait until the video is perfect.</button>
+      <button type="button" class="opt" data-ok="1">Post simple things once or twice a week while you work on the video.</button>
+      <button type="button" class="opt">Post ten times in one day, then stop.</button>
+    </div>
+    <p class="fb" hidden></p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-lesson-3">My notes for this lesson</label>
+    <textarea id="notes-lesson-3" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-lesson-3" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-lesson-3">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <a class="btn" href="#lesson-2">Back</a>
+    <button type="button" class="btn done-btn" data-lesson="lesson-3" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#lesson-4">Next: Turn attention into sales</a>
+  </div>
+</article>
+
+<!-- LESSON 4 -->
+<article id="lesson-4" tabindex="-1" hidden>
+  <h2 tabindex="-1">Turn attention into sales</h2>
+  <div class="meta"><span>Lesson 4 of 7</span><span>12 min</span></div>
+  <p>Likes do not pay your bills. Conversations do. This lesson is about what you do after someone shows interest.</p>
+  <h3>Reply to every comment</h3>
+  <p>Buffer found that posts where the account replied to comments had higher engagement than the same account's other posts: about 30% higher on LinkedIn and about 21% higher on Instagram. This shows a link, not proof that replying is the cause. Replying costs nothing, so try it.</p>
+  <ul>
+    <li>Reply within a few hours when you can.</li>
+    <li>Ask a question back to keep the conversation going.</li>
+    <li>Give the price in public when you can, and move details such as address and payment to private messages.</li>
+  </ul>
+  <h3>A simple sales conversation</h3>
+  <ol>
+    <li>Greet the person and thank them.</li>
+    <li>Ask what they need.</li>
+    <li>Recommend one option, not ten.</li>
+    <li>Give the price, the delivery time and how to pay.</li>
+    <li>Ask for the order: "Shall I prepare it for you today?"</li>
+    <li>Follow up after delivery and ask for a review.</li>
+  </ol>
+  <div class="tool no-say">
+    <h4>Three replies you can copy</h4>
+    <p class="hint">Change the words in brackets.</p>
+    <p class="example" id="s1">Hello, thanks for your message. What are you looking for today?</p>
+    <button type="button" class="btn" data-copy="s1" style="margin-bottom:12px">Copy greeting</button>
+    <p class="example" id="s2">The price is [price] and delivery takes [time]. Send me your location and I will confirm the total.</p>
+    <button type="button" class="btn" data-copy="s2" style="margin-bottom:12px">Copy price reply</button>
+    <p class="example" id="s3">Hello, did your order arrive well? If you are happy, could you send me a photo or one sentence about it? I will only post it with your permission.</p>
+    <button type="button" class="btn" data-copy="s3">Copy follow-up</button>
+  </div>
+  <h3>Collect proof</h3>
+  <p>After each happy sale, ask for a photo or a one-sentence review, and ask permission before you post it. Real customer proof is the strongest post you can make.</p>
+  <h3>Track your leads</h3>
+  <p>A notebook or a simple spreadsheet is enough. Use these columns: name, where they came from, what they want, status (new, talking or paid) and the date to follow up.</p>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Reply to every comment and message from the last seven days. Then start your lead list.</p>
+  </div>
+  <div class="quiz no-say" data-quiz data-explain="A public answer with the price shows you are open and saves the customer a step. Asking for their location moves the sale into a private chat.">
+    <span class="tagq">Check yourself</span>
+    <p class="q">Someone comments "Price?" on your post. What is the best reply?</p>
+    <div class="opts">
+      <button type="button" class="opt">Check your inbox.</button>
+      <button type="button" class="opt" data-ok="1">The price is [price] and delivery takes 2 days. Message me your location and I will confirm.</button>
+      <button type="button" class="opt">Do not reply. They will ask again.</button>
+    </div>
+    <p class="fb" hidden></p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-lesson-4">My notes for this lesson</label>
+    <textarea id="notes-lesson-4" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-lesson-4" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-lesson-4">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <a class="btn" href="#lesson-3">Back</a>
+    <button type="button" class="btn done-btn" data-lesson="lesson-4" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#lesson-5">Next: Your first paid ad</a>
+  </div>
+</article>
+
+<!-- LESSON 5 -->
+<article id="lesson-5" tabindex="-1" hidden>
+  <h2 tabindex="-1">Your first paid ad</h2>
+  <div class="meta"><span>Lesson 5 of 7</span><span>12 min</span></div>
+  <p>Ads can speed things up, but only after the basics work. Run an ad when you have a clear offer, a profile that makes ordering easy and a few posts that people responded to. Then put money behind the post that already did best. Paid ads amplify what works. They do not fix what does not.</p>
+  <h3>Steps in Meta Ads Manager</h3>
+  <p>This covers Facebook and Instagram ads.</p>
+  <ol>
+    <li><strong>Prepare:</strong> have a Facebook Page and a payment method added.</li>
+    <li><strong>Choose an objective.</strong> Meta offers six: Awareness, Traffic, Engagement, Leads, App promotion and Sales. Many local businesses start by sending people to a message chat on WhatsApp, Messenger or Instagram.</li>
+    <li><strong>Set the audience:</strong> location, age and language first, then interests. Keep it broad at the start.</li>
+    <li><strong>Set a budget.</strong> The minimum is $1 per day per ad set. Below roughly $5 a day you mostly learn direction, not firm results.</li>
+    <li><strong>Make the ad:</strong> one clear image or short video, short text and always a call-to-action button. Check image sizes so nothing is cropped.</li>
+    <li><strong>Publish and wait.</strong> Review usually takes up to 24 hours. Wait three to seven days before you judge. Day-one results are often misleading.</li>
+  </ol>
+  <p class="note">Menus and names change from time to time. Check Meta's Help Center for the current steps. This course is not affiliated with Meta.</p>
+  <div class="tool no-say">
+    <h4>Test budget calculator</h4>
+    <p class="hint">Example values are filled in. Use your own currency and the cost per click you see in Ads Manager.</p>
+    <div class="fields">
+      <label for="b-day">Budget per day<input id="b-day" type="number" min="0" step="any" value="5"></label>
+      <label for="b-days">Number of days<input id="b-days" type="number" min="1" step="1" value="7"></label>
+      <label for="b-cpc">Cost per click<input id="b-cpc" type="number" min="0" step="any" value="0.5"></label>
+    </div>
+    <div class="results">
+      <div><b id="b-total">-</b><span>Total you will spend</span></div>
+      <div><b id="b-clicks">-</b><span>Estimated clicks</span></div>
+    </div>
+  </div>
+  <p>Cost per click varies widely by country and industry. One US-based figure quoted by Buffer puts the average across industries at $1.72, ranging from $0.45 for apparel to $3.77 for finance. Your local cost may be very different. After the first week, use your own Ads Manager numbers.</p>
+  
+  <div class="example">
+    <p><strong>Budget safety:</strong> You do not need to run an ad to complete this course. First test your offer with organic posts and conversations. If you do advertise, use money you can afford to lose, confirm the current platform rules and billing currency, and set a strict spending limit before publishing.</p>
+  </div>
+
+  <h3>Common mistakes</h3>
+  <ul>
+    <li>Starting with no goal.</li>
+    <li>Judging the ad after one day.</li>
+    <li>Spending so little that you learn nothing.</li>
+    <li>Changing many things at once. Change one thing at a time, such as the image or the text, so you know what made the difference.</li>
+  </ul>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Choose your best post from the last month. Write the goal for a 7-day test and a budget you can afford to lose.</p>
+  </div>
+  <div class="quiz no-say" data-quiz data-explain="Day-one results are often misleading. Give the ad three to seven days, then decide what to change.">
+    <span class="tagq">Check yourself</span>
+    <p class="q">Your ad has run for one day with no sales. What should you do?</p>
+    <div class="opts">
+      <button type="button" class="opt">Delete it and quit ads.</button>
+      <button type="button" class="opt">Triple the budget.</button>
+      <button type="button" class="opt" data-ok="1">Wait three to seven days, then judge the results.</button>
+    </div>
+    <p class="fb" hidden></p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-lesson-5">My notes for this lesson</label>
+    <textarea id="notes-lesson-5" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-lesson-5" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-lesson-5">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <a class="btn" href="#lesson-4">Back</a>
+    <button type="button" class="btn done-btn" data-lesson="lesson-5" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#lesson-6">Next: Measure and improve</a>
+  </div>
+</article>
+
+<!-- LESSON 6 -->
+<article id="lesson-6" tabindex="-1" hidden>
+  <h2 tabindex="-1">Measure and improve</h2>
+  <div class="meta"><span>Lesson 6 of 7</span><span>10 min</span></div>
+  <p>You only need a few numbers, and you only need to look at them once a week.</p>
+  <ul>
+    <li><strong>Reach:</strong> how many people saw your post.</li>
+    <li><strong>Engagement:</strong> reactions, comments, shares and saves.</li>
+    <li><strong>Clicks or messages:</strong> people who took a step toward buying.</li>
+    <li><strong>Sales:</strong> the number that pays you.</li>
+  </ul>
+  <h3>Engagement rate</h3>
+  <p>Engagement rate is engagement divided by reach, times 100. Tools define it slightly differently, and some divide by followers. Pick one method and use it every time you compare.</p>
+  <div class="tool no-say">
+    <h4>Engagement rate calculator</h4>
+    <p class="hint">Example values are filled in. Use the numbers from one of your posts.</p>
+    <div class="fields">
+      <label for="e-eng">Engagement (reactions, comments, shares, saves)<input id="e-eng" type="number" min="0" step="1" value="120"></label>
+      <label for="e-reach">Reach (people who saw it)<input id="e-reach" type="number" min="0" step="1" value="2400"></label>
+    </div>
+    <div class="results"><div><b id="e-rate">-</b><span>Engagement rate</span></div></div>
+  </div>
+  <h3>Compare with yourself</h3>
+  <p>Buffer recommends comparing each platform with its own baseline, not with other platforms. For rough context, Buffer's 2025 medians were about 6.1% on LinkedIn, 5.6% on Facebook, 5.5% on Instagram and 4.6% on TikTok. These come from Buffer users, so use them only as background. Your best comparison is your own last month.</p>
+  <h3>The 20-minute weekly review</h3>
+  <ol>
+    <li>Open your statistics for the last seven days.</li>
+    <li>List your three best and three weakest posts.</li>
+    <li>Ask what the best ones had in common: the topic, the format or the first line.</li>
+    <li>Make more of that and stop the weakest kind.</li>
+    <li>Write one change to test next week.</li>
+  </ol>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Do your first weekly review and write down one change to test.</p>
+  </div>
+  <div class="quiz no-say" data-quiz data-explain="Platforms and accounts differ. Your own past results tell you whether you are improving.">
+    <span class="tagq">Check yourself</span>
+    <p class="q">Your Instagram engagement rate is 3% and a friend's TikTok rate is 6%. What should you do?</p>
+    <div class="opts">
+      <button type="button" class="opt">Move everything to TikTok.</button>
+      <button type="button" class="opt" data-ok="1">Compare your Instagram rate with your own Instagram results from earlier weeks.</button>
+      <button type="button" class="opt">Copy your friend's posts exactly.</button>
+    </div>
+    <p class="fb" hidden></p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-lesson-6">My notes for this lesson</label>
+    <textarea id="notes-lesson-6" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-lesson-6" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-lesson-6">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <a class="btn" href="#lesson-5">Back</a>
+    <button type="button" class="btn done-btn" data-lesson="lesson-6" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#lesson-7">Next: Your 30-day plan</a>
+  </div>
+</article>
+
+<!-- LESSON 7 -->
+<article id="lesson-7" tabindex="-1" hidden>
+  <h2 tabindex="-1">Your 30-day plan</h2>
+  <div class="meta"><span>Lesson 7 of 7</span><span>8 min</span></div>
+  <p>This plan puts every lesson together. Tick each item as you finish it. Your ticks are saved in this browser.</p>
+  <div class="no-say">
+    <div class="week"><h3>Week 1: Set up</h3>
+      <div class="check"><input type="checkbox" id="w1a" data-key="w1a"><label for="w1a">Write my offer sentence</label></div>
+      <div class="check"><input type="checkbox" id="w1b" data-key="w1b"><label for="w1b">Fix my profile and switch to a business account</label></div>
+      <div class="check"><input type="checkbox" id="w1c" data-key="w1c"><label for="w1c">Write 12 post ideas</label></div>
+    </div>
+    <div class="week"><h3>Week 2: Post and reply</h3>
+      <div class="check"><input type="checkbox" id="w2a" data-key="w2a"><label for="w2a">Publish three posts</label></div>
+      <div class="check"><input type="checkbox" id="w2b" data-key="w2b"><label for="w2b">Reply to every comment and message</label></div>
+      <div class="check"><input type="checkbox" id="w2c" data-key="w2c"><label for="w2c">Start my lead list</label></div>
+    </div>
+    <div class="week"><h3>Week 3: Try new formats</h3>
+      <div class="check"><input type="checkbox" id="w3a" data-key="w3a"><label for="w3a">Publish one carousel and one short phone video</label></div>
+      <div class="check"><input type="checkbox" id="w3b" data-key="w3b"><label for="w3b">Ask three happy customers for a review</label></div>
+    </div>
+    <div class="week"><h3>Week 4: Test an ad and review</h3>
+      <div class="check"><input type="checkbox" id="w4a" data-key="w4a"><label for="w4a">Run a 7-day ad on my best post</label></div>
+      <div class="check"><input type="checkbox" id="w4b" data-key="w4b"><label for="w4b">Do my weekly review</label></div>
+      <div class="check"><input type="checkbox" id="w4c" data-key="w4c"><label for="w4c">Plan the next 30 days</label></div>
+    </div>
+  </div>
+  <div class="do"><span class="tag">Do this now</span>
+    <p>Pick the date you start Week 1 and put it in your calendar. Then share what you learn in the feedback box below. Your answers decide which lessons I add next.</p>
+  </div>
+  
+  <section class="notes-box no-say" aria-label="Personal lesson notes">
+    <label for="notes-lesson-7">My notes for this lesson</label>
+    <textarea id="notes-lesson-7" rows="4" placeholder="Write your ideas, questions or actions here. Notes are saved in this browser."></textarea>
+    <div class="notes-actions">
+      <span class="note" id="notes-status-lesson-7" role="status">Saved on this device when storage is available.</span>
+      <button type="button" class="btn" data-copy-notes="notes-lesson-7">Copy notes</button>
+    </div>
+  </section>
+
+  <div class="lessonnav no-say">
+    <a class="btn" href="#lesson-6">Back</a>
+    <button type="button" class="btn done-btn" data-lesson="lesson-7" aria-pressed="false">Mark lesson complete</button>
+    <a class="btn primary" href="#start">Back to start</a>
+  </div>
+</article>
+
+<section class="feedback no-say" id="feedback" aria-labelledby="fbh">
+  <h2 id="fbh">Tell me how this course helped</h2>
+  <p>What did you learn? What did you try? What is missing? Send it to me by email or on LinkedIn. Your answers decide what I add next.</p>
+  <div class="row">
+    <a class="btn" href="mailto:brucericch91@gmail.com?subject=Social%20Sales%20Starter%20feedback">Email feedback</a>
+    <button type="button" class="btn" data-copy="mailAddr">Copy email address</button>
+    <a class="btn" href="https://www.linkedin.com/in/nsengiyumva-bruce-abab3a386" target="_blank" rel="noopener">Message me on LinkedIn</a>
+  </div>
+  <p class="msg">Email address: <span id="mailAddr">brucericch91@gmail.com</span>. If the Email button does nothing on your device, copy the address and write to me from your own email app.</p>
+</section>
+
+
+<section class="completion-card no-say" aria-labelledby="completion-title">
+  <h2 id="completion-title">Course completion summary</h2>
+  <p>When you finish the lessons, create a personal completion summary. This is a record of your self-study, not an accredited certificate or proof of independently assessed skills.</p>
+  <div class="fields">
+    <label for="learnerName">Your name<input id="learnerName" type="text" maxlength="80" placeholder="Enter your name"></label>
+    <label for="finishDate">Completion date<input id="finishDate" type="date"></label>
+  </div>
+  <button type="button" class="btn primary" id="summaryBtn">Download completion summary</button>
+  <p class="note" id="summaryStatus" role="status">Complete all 8 sections to unlock the summary.</p>
+</section>
+
+<section class="sources no-say">
+  <h2>Sources</h2>
+  <ul>
+    <li><a href="https://buffer.com/resources/state-of-social-media-engagement-2026/" target="_blank" rel="noopener">Buffer: The State of Social Media Engagement in 2026</a> (March 2026, 52 million posts from Buffer users)</li>
+    <li><a href="https://buffer.com/resources/facebook-ads-beginners-guide/" target="_blank" rel="noopener">Buffer: How to Run Facebook Ads, 2026 Beginner's Guide</a></li>
+    <li><a href="https://www.smbceo.com/2026/03/16/how-small-businesses-should-use-social-media-in-2026/" target="_blank" rel="noopener">Small Business CEO: How Small Businesses Should Use Social Media in 2026</a></li>
+  </ul>
+</section>
+</main>
+</div>
+</div>
+
+<script>
+(function(){
+'use strict';
+var IDS=['start','lesson-1','lesson-2','lesson-3','lesson-4','lesson-5','lesson-6','lesson-7'];
+var articles=IDS.map(function(id){return document.getElementById(id)});
+var links=[].slice.call(document.querySelectorAll('.toc a'));
+function sget(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function sset(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function parse(s,d){try{var v=JSON.parse(s);return v==null?d:v}catch(e){return d}}
+
+/* progress */
+var done=parse(sget('sss-done'),[]);
+if(!Array.isArray(done)) done=[];
+function paintProgress(){
+  var n=IDS.filter(function(id){return done.indexOf(id)>-1}).length;
+  document.getElementById('bar').style.width=(n/IDS.length*100)+'%';
+  document.getElementById('ptext').textContent=n+' of '+IDS.length+' done';
+  links.forEach(function(l){
+    var id=l.getAttribute('href').slice(1);
+    l.classList.toggle('finished',done.indexOf(id)>-1);
+  });
+  [].forEach.call(document.querySelectorAll('.done-btn'),function(b){
+    var on=done.indexOf(b.dataset.lesson)>-1;
+    b.setAttribute('aria-pressed',on?'true':'false');
+    b.textContent=on?'Lesson completed':'Mark lesson complete';
+  });
+}
+[].forEach.call(document.querySelectorAll('.done-btn'),function(b){
+  b.addEventListener('click',function(){
+    var id=b.dataset.lesson,i=done.indexOf(id);
+    if(i>-1) done.splice(i,1); else done.push(id);
+    sset('sss-done',JSON.stringify(done));
+    paintProgress();
+  });
+});
+
+/* saved checkboxes */
+var checks=parse(sget('sss-checks'),{});
+if(typeof checks!=='object'||Array.isArray(checks)) checks={};
+[].forEach.call(document.querySelectorAll('input[data-key]'),function(c){
+  c.checked=!!checks[c.dataset.key];
+  c.addEventListener('change',function(){
+    checks[c.dataset.key]=c.checked;
+    sset('sss-checks',JSON.stringify(checks));
+  });
+});
+
+/* routing */
+var firstRoute=true;
+function route(){
+  var id=(location.hash||'').slice(1);
+  if(IDS.indexOf(id)<0) id='start';
+  stopSpeech();
+  articles.forEach(function(a){a.hidden=(a.id!==id)});
+  links.forEach(function(l){
+    var on=l.getAttribute('href')==='#'+id;
+    l.classList.toggle('on',on);
+    if(on) l.setAttribute('aria-current','page'); else l.removeAttribute('aria-current');
+  });
+  if(!firstRoute){
+    window.scrollTo(0,0);
+    var h=document.getElementById(id).querySelector('h2');
+    if(h) h.focus({preventScroll:true});
+    var on=document.querySelector('.toc a.on');
+    if(on&&on.scrollIntoView){try{on.scrollIntoView({inline:'center',block:'nearest'})}catch(e){}}
+  }
+  firstRoute=false;
+}
+window.addEventListener('hashchange',route);
+
+/* quizzes */
+[].forEach.call(document.querySelectorAll('[data-quiz]'),function(q){
+  var opts=[].slice.call(q.querySelectorAll('.opt'));
+  var fb=q.querySelector('.fb');
+  opts.forEach(function(o){
+    o.addEventListener('click',function(){
+      fb.hidden=false;
+      if(o.dataset.ok==='1'){
+        o.classList.add('ok');
+        fb.textContent='Correct. '+q.dataset.explain;
+        opts.forEach(function(x){x.disabled=true});
+      }else{
+        o.classList.add('no');
+        o.disabled=true;
+        fb.textContent='Not quite. Try another answer.';
+      }
+    });
+  });
+});
+
+/* copy buttons */
+[].forEach.call(document.querySelectorAll('[data-copy]'),function(b){
+  b.addEventListener('click',function(){
+    var src=document.getElementById(b.dataset.copy);
+    var text=src.textContent.trim();
+    var label=b.textContent;
+    function ok(){b.textContent='Copied';setTimeout(function(){b.textContent=label},1500)}
+    function fallback(){
+      try{
+        var r=document.createRange();r.selectNodeContents(src);
+        var s=window.getSelection();s.removeAllRanges();s.addRange(r);
+      }catch(e){}
+      b.textContent='Selected. Press copy';setTimeout(function(){b.textContent=label},2500);
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(ok,fallback);
+    }else fallback();
+  });
+});
+
+/* tools */
+function val(id){return document.getElementById(id).value.trim()}
+function offer(){
+  var who=val('of-who')||'[who]',res=val('of-res')||'[result]',what=val('of-what')||'[what you sell]';
+  document.getElementById('offer-out').textContent='I help '+who+' get '+res+' with '+what+'.';
+}
+['of-who','of-res','of-what'].forEach(function(id){document.getElementById(id).addEventListener('input',offer)});
+offer();
+
+function money(n){return n.toLocaleString(undefined,{maximumFractionDigits:2})}
+function budget(){
+  var d=parseFloat(val('b-day')),n=parseFloat(val('b-days')),c=parseFloat(val('b-cpc'));
+  var t=(d>=0&&n>=0)?d*n:NaN;
+  document.getElementById('b-total').textContent=isFinite(t)?money(t):'-';
+  document.getElementById('b-clicks').textContent=(isFinite(t)&&c>0)?Math.floor(t/c).toLocaleString():'-';
+}
+['b-day','b-days','b-cpc'].forEach(function(id){document.getElementById(id).addEventListener('input',budget)});
+budget();
+
+function rate(){
+  var e=parseFloat(val('e-eng')),r=parseFloat(val('e-reach'));
+  document.getElementById('e-rate').textContent=(e>=0&&r>0)?(e/r*100).toFixed(1)+'%':'-';
+}
+['e-eng','e-reach'].forEach(function(id){document.getElementById(id).addEventListener('input',rate)});
+rate();
+
+/* listen: the device's built-in voice reads the lesson */
+var tts=('speechSynthesis' in window&&window.SpeechSynthesisUtterance)?window.speechSynthesis:null;
+var listenBar=document.getElementById('listen');
+var listenBtn=document.getElementById('listenBtn');
+var voiceSel=document.getElementById('voice');
+var rateSel=document.getElementById('rate');
+var queue=[],qi=0,token=0,reading=null;
+function setSpeaking(on){
+  listenBtn.setAttribute('aria-pressed',on?'true':'false');
+  listenBtn.textContent=on?'Stop listening':'Listen to this lesson';
+}
+function clearReading(){if(reading){reading.classList.remove('reading');reading=null}}
+function stopSpeech(){
+  token++;
+  if(tts){try{tts.cancel()}catch(e){}}
+  setSpeaking(false);clearReading();
+}
+function voices(){return tts?tts.getVoices().filter(function(v){return /^en/i.test(v.lang)}):[]}
+function loadVoices(){
+  var vs=voices();
+  if(!vs.length) return;
+  var keep=voiceSel.value;
+  voiceSel.innerHTML='';
+  var best=-1;
+  vs.forEach(function(v,i){
+    var o=document.createElement('option');
+    o.value=v.voiceURI;o.textContent=v.name+' ('+v.lang+')';
+    voiceSel.appendChild(o);
+    if(best<0&&/natural|neural|online|enhanced|premium|google/i.test(v.name)) best=i;
+  });
+  if(keep&&vs.some(function(v){return v.voiceURI===keep})) voiceSel.value=keep;
+  else voiceSel.selectedIndex=best>=0?best:0;
+}
+function pick(){
+  var vs=voices();
+  for(var i=0;i<vs.length;i++){if(vs[i].voiceURI===voiceSel.value) return vs[i]}
+  return vs[0]||null;
+}
+function speakNext(my){
+  if(my!==token) return;
+  if(qi>=queue.length){setSpeaking(false);clearReading();return}
+  var el=queue[qi++];
+  clearReading();el.classList.add('reading');reading=el;
+  try{el.scrollIntoView({block:'center',behavior:'smooth'})}catch(e){}
+  var u=new SpeechSynthesisUtterance(el.textContent.replace(/\s+/g,' ').trim());
+  var v=pick();
+  if(v){u.voice=v;u.lang=v.lang}else u.lang='en-US';
+  u.rate=parseFloat(rateSel.value)||1;
+  u.onend=function(){speakNext(my)};
+  u.onerror=function(){if(my===token) speakNext(my)};
+  tts.speak(u);
+}
+function startSpeech(){
+  stopSpeech();
+  var art=articles.filter(function(a){return !a.hidden})[0];
+  if(!art) return;
+  queue=[].slice.call(art.querySelectorAll('h2,h3,p,li')).filter(function(el){
+    return !el.closest('.no-say')&&el.textContent.trim().length>0;
+  });
+  qi=0;
+  var my=++token;
+  setSpeaking(true);
+  speakNext(my);
+}
+if(tts){
+  listenBar.hidden=false;
+  loadVoices();
+  if(tts.addEventListener) tts.addEventListener('voiceschanged',loadVoices);
+  listenBtn.addEventListener('click',function(){
+    if(listenBtn.getAttribute('aria-pressed')==='true') stopSpeech(); else startSpeech();
+  });
+}
+window.addEventListener('pagehide',stopSpeech);
+
+paintProgress();
+updateDashboard();
+route();
+
+/* learner dashboard, notes, theme, export and completion summary */
+var sectionCount=IDS.length;
+function updateDashboard(){
+  var count=IDS.filter(function(id){return done.indexOf(id)>-1}).length;
+  document.getElementById('completedStat').textContent=count+'/'+sectionCount;
+  document.getElementById('remainingStat').textContent=(sectionCount-count);
+  document.getElementById('percentStat').textContent=Math.round(count/sectionCount*100)+'%';
+  var summaryBtn=document.getElementById('summaryBtn');
+  summaryBtn.disabled=count<sectionCount;
+  document.getElementById('summaryStatus').textContent=count===sectionCount?
+    'All sections completed. You can create your personal completion summary.':
+    'Complete all '+sectionCount+' sections to unlock the summary. '+count+' completed so far.';
+}
+var themeBtn=document.getElementById('themeBtn');
+var savedTheme=sget('sss-theme');
+if(savedTheme==='dark'){
+  document.documentElement.setAttribute('data-theme','dark');
+  themeBtn.textContent='Use light mode';themeBtn.setAttribute('aria-pressed','true');
+}
+themeBtn.addEventListener('click',function(){
+  var dark=document.documentElement.getAttribute('data-theme')!=='dark';
+  if(dark){document.documentElement.setAttribute('data-theme','dark');sset('sss-theme','dark');}
+  else{document.documentElement.setAttribute('data-theme','light');sset('sss-theme','light');}
+  themeBtn.textContent=dark?'Use light mode':'Use dark mode';
+  themeBtn.setAttribute('aria-pressed',dark?'true':'false');
+});
+document.getElementById('printBtn').addEventListener('click',function(){window.print();});
+document.getElementById('exportBtn').addEventListener('click',function(){
+  var payload={course:'Social Sales Starter',author:'Nsengiyumva Bruce',exportedAt:new Date().toISOString(),
+    completedSections:done,checklist:checks,notes:{}};
+  IDS.forEach(function(id){payload.notes[id]=sget('sss-note-'+id)||'';});
+  var blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  var url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='social-sales-starter-progress.json';
+  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+  document.getElementById('utilityStatus').textContent='Progress export downloaded.';
+});
+document.getElementById('resetBtn').addEventListener('click',function(){
+  if(!window.confirm('Reset lesson completion, checklists and notes on this browser? This cannot be undone.')) return;
+  done=[];checks={};sset('sss-done','[]');sset('sss-checks','{}');
+  IDS.forEach(function(id){try{localStorage.removeItem('sss-note-'+id)}catch(e){}
+    var box=document.getElementById('notes-'+id);if(box)box.value='';
+  });
+  [].forEach.call(document.querySelectorAll('input[data-key]'),function(c){c.checked=false;});
+  paintProgress();updateDashboard();
+  document.getElementById('utilityStatus').textContent='Progress and notes reset.';
+});
+IDS.forEach(function(id){
+  var area=document.getElementById('notes-'+id);
+  var status=document.getElementById('notes-status-'+id);
+  if(!area)return;
+  area.value=sget('sss-note-'+id)||'';
+  area.addEventListener('input',function(){
+    sset('sss-note-'+id,area.value);
+    if(status)status.textContent='Saved on this device.';
+  });
+});
+[].forEach.call(document.querySelectorAll('[data-copy-notes]'),function(btn){
+  btn.addEventListener('click',function(){
+    var area=document.getElementById(btn.dataset.copyNotes);
+    if(!area.value.trim()){btn.textContent='No notes yet';return;}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(area.value).then(function(){btn.textContent='Copied';},function(){area.select();btn.textContent='Selected — copy manually';});
+    }else{area.select();btn.textContent='Selected — copy manually';}
+  });
+});
+document.getElementById('summaryBtn').addEventListener('click',function(){
+  if(done.length<sectionCount)return;
+  var name=document.getElementById('learnerName').value.trim();
+  var date=document.getElementById('finishDate').value||new Date().toISOString().slice(0,10);
+  if(!name){document.getElementById('summaryStatus').textContent='Enter your name first.';document.getElementById('learnerName').focus();return;}
+  var content=[
+    'SOCIAL SALES STARTER',
+    'PERSONAL COURSE COMPLETION SUMMARY',
+    '',
+    'Learner: '+name,
+    'Course author: Nsengiyumva Bruce',
+    'Completion date: '+date,
+    'Completed sections: '+sectionCount+' of '+sectionCount,
+    '',
+    'This document records self-reported completion of a self-paced learning resource.',
+    'It is not an accredited qualification or an independently assessed certificate.'
+  ].join('\n');
+  var blob=new Blob([content],{type:'text/plain;charset=utf-8'});
+  var url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='social-sales-starter-completion-summary.txt';
+  document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);
+  document.getElementById('summaryStatus').textContent='Your completion summary has been downloaded.';
+});
+
+})();
+</script>
+
+</body>
+</html>
